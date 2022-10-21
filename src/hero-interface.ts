@@ -17,7 +17,7 @@ export interface IHero {
  * @var {number} age
  * @var {number} health 
  */
-export interface IHuman {
+export interface IHuman extends IHero {
     sex: string;
     age: number;
     health: number;
@@ -32,7 +32,7 @@ export interface IHuman {
  * @var {number} wheels
  * @var {string} clan 
  */
-export interface ITransformer {
+export interface ITransformer extends IHero {
     wings: number;
     wheels: number;
     clan: string;
